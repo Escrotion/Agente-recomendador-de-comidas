@@ -1,0 +1,162 @@
+[
+    {
+        "nombre": "tostada de jamón",
+        "momento": "desayuno",
+        "saciedad": 2,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 8
+    },
+    {
+        "nombre": "tostada de pavo",
+        "momento": "desayuno",
+        "saciedad": 2,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 9
+    },
+    {
+        "nombre": "tostada de jamón york",
+        "momento": "desayuno",
+        "saciedad": 2,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 8
+    },
+    {
+        "nombre": "pancakes",
+        "momento": "desayuno",
+        "saciedad": 3,
+        "tiempo": 3,
+        "esfuerzo": 2,
+        "gusto": 10
+    },
+    {
+        "nombre": "arroz con kebab",
+        "momento": "comida",
+        "saciedad": 3,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 10
+    },
+    {
+        "nombre": "filete empanado",
+        "momento": "comida",
+        "saciedad": 2,
+        "tiempo": 2,
+        "esfuerzo": 1,
+        "gusto": 10
+    },
+    {
+        "nombre": "lasaña",
+        "momento": "comida",
+        "saciedad": 3,
+        "tiempo": 2,
+        "esfuerzo": 3,
+        "gusto": 9
+    },
+    {
+        "nombre": "macarrones",
+        "momento": "comida",
+        "saciedad": 3,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 8
+    },
+    {
+        "nombre": "espaguettis",
+        "momento": "comida",
+        "saciedad": 3,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 9
+    },
+    {
+        "nombre": "espaguettis carbonara",
+        "momento": "comida",
+        "saciedad": 3,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 9
+    },
+    {
+        "nombre": "lentejas",
+        "momento": "comida",
+        "saciedad": 3,
+        "tiempo": 3,
+        "esfuerzo": 1,
+        "gusto": 8
+    },
+    {
+        "nombre": "pescado",
+        "momento": "comida",
+        "saciedad": 2,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 7
+    },
+    {
+        "nombre": "filete a la plancha",
+        "momento": "comida",
+        "saciedad": 2,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 8
+    },
+    {
+        "nombre": "fajitas",
+        "momento": "cena",
+        "saciedad": 2,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 9
+    },
+    {
+        "nombre": "bocadillo de atún",
+        "momento": "cena",
+        "saciedad": 1,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 7
+    },
+    {
+        "nombre": "bocadillo de lomo embuchado",
+        "momento": "cena",
+        "saciedad": 2,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 7
+    },
+    {
+        "nombre": "bocadillo de tortilla",
+        "momento": "cena",
+        "saciedad": 3,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 10
+    },
+    {
+        "nombre": "tortilla",
+        "momento": "cena",
+        "saciedad": 2,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 9
+    },
+    {
+        "nombre": "bocadillo de pavo",
+        "momento": "cena",
+        "saciedad": 2,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 8
+    },
+    {
+        "nombre": "sandwich",
+        "momento": "cena",
+        "saciedad": 3,
+        "tiempo": 1,
+        "esfuerzo": 1,
+        "gusto": 7
+    }
+]
