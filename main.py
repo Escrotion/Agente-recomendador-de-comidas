@@ -22,13 +22,13 @@ def actualizar_historial(ruta,historial):
     with open(ruta,"w", encoding="utf-8") as f:
         json.dump(historial,f,ensure_ascii=False, indent=2)
 
+#funcion que imprime por pantalla la información sobre una comida
 def imprimir_comida(comida):
     atributos = ["nombre","momento","saciedad","tiempo","esfuerzo","gusto"]
     for clave in atributos:
         print(clave.capitalize() + ":", comida[clave])
     print()
 
-from datetime import date
 
 def viola_regla_dias(comida, historial, fecha_actual_str, dias_minimos):
     ultima_fecha_str = None
