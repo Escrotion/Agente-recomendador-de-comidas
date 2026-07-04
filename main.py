@@ -30,7 +30,7 @@ def actualizar_historial(ruta,historial):
 # funcion que imprime por pantalla la informacion relacionada con una comida
 # "comida" es el diccionario del que se lee
 def imprimir_comida(comida):
-    atributos = ["nombre","momento","saciedad","tiempo","esfuerzo","gusto"]
+    atributos = ["nombre","saciedad","tiempo","esfuerzo","gusto"]
     for clave in atributos:
         print(clave.capitalize() + ":", comida[clave])
     print()
@@ -89,6 +89,20 @@ def calcula_score(comida, hambre, cansancio, rapidez):
 
     return score_total
 
+# funcion que se encarga de la entrada de datos
+# mensaje es el input
+# maximo y minimo son los limites
+def pedir_entero_en_rango(mensaje, minimo, maximo):
+    while True:
+        try:
+            valor = int(input(mensaje))
+            if minimo <= valor <= maximo:
+                return valor
+            else:
+                print(f"Por favor, introduce un número entre {minimo} y {maximo}.")
+        except ValueError:
+            print("Por favor, introduce un número válido.")
+
 # aqui ya pasamos al main
 def main():
     # cargo todos los datos necesarios
@@ -97,9 +111,9 @@ def main():
 
     # Pedimos al usuario los datos de entrada
     momento_dia = str(input("Cual es el momento del día: "))
-    hambre = int(input("¿Cuánta hambre tienes?: "))
-    cansancio = int(input("¿Cuánto cansancio tienes?: "))
-    rapidez = int(input("¿Cómo de rápido quieres cocinar?: "))
+    hambre = pedir_entero_en_rango("¿Cuánta hambre tienes? (1-3): ",1,3)
+    cansancio = pedir_entero_en_rango("¿Cuánto cansancio tienes? (1-3): ",1,3)
+    rapidez = pedir_entero_en_rango("¿Cómo de rápido quieres cocinar? (1-3): ",1,3)
 
     fecha_hoy = str(input("Escriba la fecha del día de hoy (en formato 'YYYY-MM-DD'): "))
 
@@ -120,10 +134,13 @@ def main():
 
     candidatas.sort(key = lambda x: x[1] , reverse = True)
     print("Este es el top 3 de las comidas que te recomiendo:")
-    for i in range(4):
-        print(i+1,":",imprimir_comida(candidatas[i][0]))
+    print()
+    for i in range(min(3,len(candidatas))):
+        print("Opción",i+1,":")
+        imprimir_comida(candidatas[i][0])
     
-    opcion = int(input("Eliga una opción: "))
+    num_opciones = min(3,len(candidatas))
+    opcion = pedir_entero_en_rango(f"Eliga una opción (1-{num_opciones}): ",1,num_opciones)
     opcion -= 1
 
     comida_elegida = candidatas[opcion][0]
